@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+
+body{
+    /* display: flex; */
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: #44475b;
+}
+
+.card{
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 14px #dbe7f2;
+    flex-direction: column;
+    display: block;
+}
+
+.card .header{
+    padding:6px;
+}
+
+.header{
+    margin-top: 2px;
+}
+
+.align-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-body{
+    align-items: center;
+}
+
+.row{
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.row:before, .row:after{
+    clear:both;
+    content:'';
+    display: table;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+    /* border: none;
+    border-bottom: 1px solid #ccc; */
+    padding-bottom: 5px;
+}
+
+.chartjsRender{
+    animation: chartjs-render-animation 1ms;
+    animation-duration: 1ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: chartjs-render-animation;
+}
+
+
+@media only screen and (min-width:990px){
+    .card{
+        width: 50%;
+    }
+
+    .chartjsRender{
+        margin-left: -4rem;
+    }
+}
+
+/* @media only screen and (max-width:360px){
+    body{
+        margin-top: 5 !important;
+        font-size: 14px !important;
+        width: 100%;
+        height: auto;
+        position: inherit;
+    }
+    .mainContainer{
+        width: 100%;
+        display: block;
+         margin-top: 42px;
+    }
+
+    input{
+        width: 100%;
+        float: initial;
+    }
+    .card{
+        width: 100%;
+        margin-top: 30%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        display: block;
+        position: fixed;
+    }
+
+    .header{
+        padding-top: 2px;
+        margin-bottom:-12px;
+        margin-top: 8px !important;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+      }
+
+    .chartjsRender{
+        display: block;
+        position: inherit;
+        width: 303px !important;
+        height: 280px !important;
+    }
+}
+
+
+@media only screen and(max-width:768px){
+    .mainContainer{
+        width: 100%;
+        display: block;
+        height: auto;
+        background-color: orange !important;
+    }
+
+    input{
+        width: 100%;
+        float: initial;
+    }
+    .card{
+        width: 100%;
+        margin-top: 190px;
+        margin-left: 12px;
+        margin-right: 12px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        display: block;
+        position: inherit;
+    }
+
+    .header{
+        padding-top: 2px;
+        margin-top: 3px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+      }
+
+    .chartjsRender{
+        display: block;
+        width: 304px !important;
+        height: 304px !important;
+    }
+} */
+
+@media (max-width: 576px) {
+    .main-container {
+      width: 100%;
+      display: block;
+      padding: 1em 0.5em;
+    }
+    .header{
+        margin-top: 10px;
+        margin-bottom: -20px;
+    }
+    form {
+      width: 100%;
+      float: unset;
+    }
+    .calculator {
+      padding: 1em;
+      width: 100%;
+      margin: 0;
+    }
+    .card{
+        margin-left: 16px;
+        top: 75%;
+        width: 100%;
+        /* position: fixed; */
+        z-index: inherit;
+    }
+    #chart {
+      width: 100%;
+      /* position: inherit; */
+    }
+  }

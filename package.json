@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-chart.js": "^1.1.0"
+  },
+  "scripts": {
+    "start": "npm run server",
+    "server": "http-server",
+    "test": "echo \"Error:no test specifies\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
